@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const mongoose = require('mongoose')
 
 if (process.argv.length < 5) {
@@ -21,6 +22,7 @@ const number = process.argv[4]
 
 mongoose
   .connect(url)
+  // eslint-disable-next-line no-unused-vars
   .then((result) => {
     console.log('connected')
 
